@@ -8,9 +8,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
     />
+    <script src="Javascript/game.js"></script>
+    <script src="Javascript/player.js"></script>
+    <script src="Javascript/enemy.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Javascript Demo</title>
   </head>
+
   <body>
     <div class="header">
       <p>Play the greatest RPG game ever to be made!</p>
@@ -19,7 +23,11 @@
 
     <div class="interface">
       <a href="#">
-        <img src="img/player/swordsman.png" alt="swordsman" />
+        <img
+          src="img/player/swordsman.png"
+          alt="swordsman"
+          onclick="gameManager.setGameStart('Swordsman')"
+        />
         <div>
           <h3>Swordsman</h3>
           <p>
@@ -29,7 +37,11 @@
         </div>
       </a>
       <a href="#">
-        <img src="img/player/rouge.png" alt="rouge" />
+        <img
+          src="img/player/rouge.png"
+          alt="rouge"
+          onclick="gameManager.setGameStart('Rouge')"
+        />
         <div>
           <h3>Rouge</h3>
           <p>
@@ -39,7 +51,11 @@
         </div>
       </a>
       <a href="#">
-        <img src="img/player/mage.png" alt="mage" />
+        <img
+          src="img/player/mage.png"
+          alt="mage"
+          onclick="gameManager.setGameStart('Mage')"
+        />
         <div>
           <h3>Mage</h3>
           <p>
@@ -49,7 +65,11 @@
         </div>
       </a>
       <a href="#">
-        <img src="img/player/archer.png" alt="archer" />
+        <img
+          src="img/player/archer.png"
+          alt="archer"
+          onclick="gameManager.setGameStart('Archer')"
+        />
         <div>
           <h3>Archer</h3>
           <p>
