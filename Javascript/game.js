@@ -25,9 +25,9 @@ let gameManager = { // Create Object gameManager
             break;
         }
 
-        let getInterface = document.querySelector(".interface"); // Display selected character Player Object -> Properties
+        let getInterface = document.querySelector(".interface"); // Create selected character Player Object -> Properties and display 
 
-            getInterface.innerHTML = '<img src="img/player/' + classType.toLowerCase() + '.png" class=img-player"><div><h3>' + classType + '</h3><p>Health: ' + player.health + '</p><p>Mana: ' + player.mana + '</p><p>Strength: ' + player.strength + '</p><p>Agility: ' + player.agility + '</p><p>Speed: ' + player.speed + '</p></div>';
+            getInterface.innerHTML = '<img src="img/player/' + classType.toLowerCase() + '.png" class=img-player"><div><h3>' + classType + '</h3><p class="health-player">Health: ' + player.health + '</p><p>Mana: ' + player.mana + '</p><p>Strength: ' + player.strength + '</p><p>Agility: ' + player.agility + '</p><p>Speed: ' + player.speed + '</p></div>';
     },
 
     setPreFight: function(){  // gameManager -> Method - setPreFight
@@ -65,7 +65,7 @@ let gameManager = { // Create Object gameManager
         }
 
         getHeader.innerHTML = '<p>Task: Choose your attack!</p>';
-        getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="playerMoves.calcAttack()">Attack!</a>';
+        getActions.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Attack!</a>';
         getEnemy.innerHTML = '<img src="img/enemy/' + enemy.enemyType.toLowerCase() + '.png" alt"'+ enemy.enemyType +' "class=img-enemy"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Mana: ' + enemy.mana + '</p><p>Strength: ' + enemy.strength + '</p><p>Agility: ' + enemy.agility + '</p><p>Speed: ' + enemy.speed + '</p></div>';
 
     }
