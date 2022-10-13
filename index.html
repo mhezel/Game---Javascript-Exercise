@@ -16,74 +16,74 @@
   </head>
 
   <body>
-    <div class="header">
-      <p>Play the greatest RPG game ever to be made!</p>
-      <h2>Choose your Character!</h2>
+    <div class="container">
+      <div class="header">
+        <p>Play the greatest RPG game ever to be made!</p>
+        <h2>Choose your Character!</h2>
+      </div>
+
+      <div class="interface">
+        <a href="#">
+          <img
+            src="img/player/swordsman.png"
+            alt="swordsman"
+            onclick="gameManager.setGameStart('Swordsman')"
+          />
+          <div class="player-stat">
+            <h3>Swordsman</h3>
+            <p>
+              Swordsman have a higher health and stamina, however their strength
+              also makes them slower and clumsier.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <img
+            src="img/player/rouge.png"
+            alt="rouge"
+            onclick="gameManager.setGameStart('Rouge')"
+          />
+          <div>
+            <h3>Rouge</h3>
+            <p>
+              Rouges are fast and have high stamina and speed which makes up for
+              their lack in strength and health.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <img
+            src="img/player/mage.png"
+            alt="mage"
+            onclick="gameManager.setGameStart('Mage')"
+          />
+          <div>
+            <h3>Mage</h3>
+            <p>
+              Mages are glass cannons which puts all their efforts into spells.
+              This means they slack on everything else.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <img
+            src="img/player/archer.png"
+            alt="archer"
+            onclick="gameManager.setGameStart('Archer')"
+          />
+          <div>
+            <h3>Archer</h3>
+            <p>
+              Archers are well rounded fighters that focuses on evening out
+              their skills. No strength and weakenesses.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="actions"></div>
+      <div class="arena"></div>
+      <div class="enemy"></div>
     </div>
-
-    <div class="interface">
-      <a href="#">
-        <img
-          src="img/player/swordsman.png"
-          alt="swordsman"
-          onclick="gameManager.setGameStart('Swordsman')"
-        />
-        <div>
-          <h3>Swordsman</h3>
-          <p>
-            Swordsman have a higher health and stamina, however their strength
-            also makes them slower and clumsier.
-          </p>
-        </div>
-      </a>
-      <a href="#">
-        <img
-          src="img/player/rouge.png"
-          alt="rouge"
-          onclick="gameManager.setGameStart('Rouge')"
-        />
-        <div>
-          <h3>Rouge</h3>
-          <p>
-            Rouges are fast and have high stamina and speed which makes up for
-            their lack in strength and health.
-          </p>
-        </div>
-      </a>
-      <a href="#">
-        <img
-          src="img/player/mage.png"
-          alt="mage"
-          onclick="gameManager.setGameStart('Mage')"
-        />
-        <div>
-          <h3>Mage</h3>
-          <p>
-            Mages are glass cannons which puts all their efforts into spells.
-            This means they slack on everything else.
-          </p>
-        </div>
-      </a>
-      <a href="#">
-        <img
-          src="img/player/archer.png"
-          alt="archer"
-          onclick="gameManager.setGameStart('Archer')"
-        />
-        <div>
-          <h3>Archer</h3>
-          <p>
-            Archers are well rounded fighters that focuses on evening out their
-            skills. No strength and weakenesses.
-          </p>
-        </div>
-      </a>
-    </div>
-
-    <div class="actions"></div>
-
-    <div class="arena"></div>
-
-    <div class="enemy"></div>
   </body>
 </html>

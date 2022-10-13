@@ -1,3 +1,32 @@
 img{
     width: 200px;
 }
+body{
+    background-color: #733e32; 
+}
+.container {
+    width: 500px;
+    text-align: center;
+    margin: 60px auto;
+}
+.interface a, .header, .stat{
+    color: wheat;
+    text-decoration: none;
+}
+.interface a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    border: 1px solid wheat;
+    transition: all, ease-in-out, 1ms;
+}
+.btn-prefight{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.interface, .enemy{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+}
